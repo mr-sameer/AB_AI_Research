@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News Alerts — Abdus Sameer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="navbar">
+    <a href="index.html" class="brand">
+      <span class="mono-mark">AS</span>
+      Abdus Sameer
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="links" id="navLinks">
+      <a href="index.html#coverage">Coverage</a>
+      <a href="news.html">News Alerts</a>
+      <a href="reports.html">Reports</a>
+      <a href="index.html#methodology">Methodology</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#alerts" class="nav-cta">Get Alerts</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero dotgrid">
+    <div class="wrap">
+      <div class="breadcrumb"><a href="index.html">Home</a> / News Alerts</div>
+      <span class="eyebrow">Live Coverage</span>
+      <h1>Every alert, cross-checked before it's posted.</h1>
+      <p class="lede">
+        No wire-copy reposts. Each item below is pulled from multiple public sources —
+        filings, transcripts, and reporting — filtered for what actually changes the thesis,
+        and written in one line you can act on.
+      </p>
+    </div>
+  </section>
+
+  <section class="criteria-section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">What Makes The Cut</span>
+        <h2>Not every headline — only what moves the thesis</h2>
+        <p>This isn't a news feed of everything a company does. Every alert has to pass a
+        materiality test: does it actually change the numbers, the risk, or the story an
+        investor should be tracking?</p>
+      </div>
+      <div class="criteria-grid">
+        <div class="criteria-col in">
+          <h4>✓ Makes the cut</h4>
+          <ul>
+            <li>Earnings beats/misses and guidance changes</li>
+            <li>Major deal wins, losses, or contract terminations</li>
+            <li>CEO/CFO or key leadership changes</li>
+            <li>Order backlog, capex, or utilization data shifts</li>
+            <li>Export controls, tariffs, and policy changes affecting the sector</li>
+            <li>M&amp;A activity — acquisitions, divestitures, stake sales</li>
+            <li>Wage hikes, attrition trends, or currency moves hitting margins</li>
+            <li>Visible share shifts between competitors</li>
+          </ul>
+        </div>
+        <div class="criteria-col out">
+          <h4>✕ Filtered out</h4>
+          <ul>
+            <li>Generic product-launch PR with no revenue/margin angle</li>
+            <li>Day-to-day price moves with no underlying cause</li>
+            <li>Award, recognition, or "vision statement" press releases</li>
+            <li>Rehashed wire copy with nothing new versus what's priced in</li>
+            <li>Sustainability/CSR announcements with no financial link</li>
+            <li>Speculation with no source behind it</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="product">Product</button>
+        <button class="filter-tab" data-filter="services">Services</button>
+        <button class="filter-tab" data-filter="ai">AI</button>
+        <button class="filter-tab" data-filter="silicon">Silicon</button>
+      </div>
+
+      <div class="feed-count" id="feedCount">Showing 10 of 10 alerts</div>
+
+      <div class="feed-list full" id="feedList">
+
+        <div class="alert-item" data-sector="silicon">
+          <div class="alert-meta"><span class="time">2h ago</span><span class="sector-chip silicon">Silicon</span></div>
+          <div class="alert-body">
+            <h5>Nvidia's data-center backlog grew again — but so did customer concentration</h5>
+            <p>Order book strength is real, but a shrinking number of hyperscalers now account for most of it. Worth watching next quarter.</p>
+            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 5 sources</span><a href="sample-report.html">Read full analysis →</a></div>
+          </div>
+        </div>
+
+        <div class="alert-item" data-sector="services">
+          <div class="alert-meta"><span class="time">6h ago</span><span class="sector-chip services">Services</span></div>
+          <div class="alert-body">
+            <h5>Infosys raises full-year guidance on the back of AI-services deal wins</h5>
+            <p>The raise is real, but margin guidance stayed flat — deal wins may be coming at a cost.</p>
+            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 4 sources</span><a href="reports.html">Read full analysis →</a></div>
+          </div>
+        </div>
+
+        <div class="alert-item" data-sector="ai">
+          <div class="alert-meta"><span class="time">1d ago</span><span class="sector-chip ai">AI</span></div>
+          <div class="alert-body">
+            <h5>Microsoft's Copilot attach-rate disclosure raises more questions than it answers</h5>
+            <p>The number sounds strong until you check what "active usage" is actually defined as this quarter.</p>
+            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 3 sources</span><a href="reports.html">Read full analysis →</a></div>
+          </div>
+        </div>
+
+        <div class="alert-item" data-sector="product">
+          <div class="alert-meta"><span class="time">2d ago</span><span class="sector-chip product">Product</span></div>
+          <div class="alert-body">
+            <h5>Zoho's continued bootstrapped growth is quietly outpacing funded SaaS peers</h5>
+            <p>No funding round, no layoffs headline — a useful contrast case for the "growth needs capital" narrative.</p>
+            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 3 sources</span><a href="reports.html">Read full analysis →</a></div>
+          </div>
+        </div>
+
+        <div class="alert-item" data-sector="silicon">
+          <div class="alert-meta"><span class="time">2d ago</span><span class="sector-chip silicon">Silicon</span></div>
+          <div class="alert-body">
+            <h5>ASML order intake softens — but service revenue keeps compounding</h5>
+            <p>New system bookings slowed, but the installed-base annuity business is now big enough to cushion the cycle.</p>
+            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 4 sources</span><a href="reports.html">Read full analysis →</a></div>
+          </div>
+        </div>
+
+        <div class="alert-item" data-sector="services">
+          <div class="alert-meta"><span class="time">3d ago</span><span class="sector-chip services">Services</span></div>
+          <div class="alert-body">
+            <h5>TCS attrition ticks up for the second straight quarter</h5>
+            <p>Still below industry average, but the direction matters more than the level right now.</p>
+            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 3 sources</span><a href="reports.html">Read full analysis →</a></div>
+          </div>
+        </div>
+
+        <div class="alert-item" data-sector="ai">
+          <div class="alert-meta"><span class="time">4d ago</span><span class="sector-chip ai">AI</span></div>
+          <div class="alert-body">
+            <h5>AMD's MI-series guidance gets a quiet upgrade from two hyperscaler contracts</h5>
+            <p>Neither contract was announced formally — both surfaced through capex disclosures instead.</p>
+            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 4 sources</span><a href="reports.html">Read full analysis →</a></div>
+          </div>
+        </div>
+
+        <div class="alert-item" data-sector="product">
+          <div class="alert-meta"><span class="time">5d ago</span><span class="sector-chip product">Product</span></div>
+          <div class="alert-body">
+            <h5>Freshworks' net revenue retention stabilizes after three quarters of decline</h5>
+            <p>Small sample, but the first sign that pricing changes earlier this year may be working.</p>
+            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 3 sources</span><a href="reports.html">Read full analysis →</a></div>
+          </div>
+        </div>
+
+        <div class="alert-item" data-sector="silicon">
+          <div class="alert-meta"><span class="time">6d ago</span><span class="sector-chip silicon">Silicon</span></div>
+          <div class="alert-body">
+            <h5>TSMC's capacity utilization implies the AI capex cycle isn't slowing yet</h5>
+            <p>Utilization data is a cleaner read than any single customer's earnings call.</p>
+            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 5 sources</span><a href="reports.html">Read full analysis →</a></div>
+          </div>
+        </div>
+
+        <div class="alert-item" data-sector="services">
+          <div class="alert-meta"><span class="time">1w ago</span><span class="sector-chip services">Services</span></div>
+          <div class="alert-body">
+            <h5>HCLTech's product-and-platform revenue mix quietly crosses 20% of total sales</h5>
+            <p>A structural shift worth tracking, since it carries a different margin profile than pure services.</p>
+            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 3 sources</span><a href="reports.html">Read full analysis →</a></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="alerts" style="padding-top:0;">
+    <div class="wrap">
+      <div class="alerts">
+        <div>
+          <h3>Never miss an alert</h3>
+          <p>One email when something actually moves in IT, AI, or semiconductors. Nothing else.</p>
+        </div>
+        <form class="alerts-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Added ✓';">
+          <input type="email" placeholder="you@email.com" required>
+          <button type="submit">Notify me</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">Abdus Sameer — IT &amp; Semiconductor Research</div>
+      <div class="footer-links">
+        <a href="index.html#coverage">Coverage</a>
+        <a href="reports.html">Reports</a>
+        <a href="index.html#methodology">Methodology</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <p class="disclaimer">
+      This site publishes independent research and commentary for educational purposes only.
+      It is not investment advice, and Abdus Sameer is not a SEBI-registered investment adviser
+      or research analyst unless stated otherwise. Views expressed are personal opinions based
+      on public information and may be wrong. Do your own research and consult a licensed
+      professional before making investment decisions. © 2026 Abdus Sameer.
+    </p>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+  const tabs = document.querySelectorAll('.filter-tab');
+  const items = document.querySelectorAll('#feedList .alert-item');
+  const count = document.getElementById('feedCount');
+  const total = items.length;
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const f = tab.dataset.filter;
+      let shown = 0;
+      items.forEach(item => {
+        const match = f === 'all' || item.dataset.sector === f;
+        item.style.display = match ? '' : 'none';
+        if (match) shown++;
+      });
+      count.textContent = f === 'all' ? `Showing ${total} of ${total} alerts` : `Showing ${shown} of ${total} alerts — ${f}`;
+    });
+  });
+</script>
+
+</body>
+</html>

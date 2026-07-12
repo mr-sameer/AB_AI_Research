@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equity Research Reports — Abdus Sameer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="navbar">
+    <a href="index.html" class="brand">
+      <span class="mono-mark">AS</span>
+      Abdus Sameer
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="links" id="navLinks">
+      <a href="index.html#coverage">Coverage</a>
+      <a href="news.html">News Alerts</a>
+      <a href="reports.html">Reports</a>
+      <a href="index.html#methodology">Methodology</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#alerts" class="nav-cta">Get Alerts</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero dotgrid">
+    <div class="wrap">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Reports</div>
+      <span class="eyebrow">Equity Research &amp; Business Analysis</span>
+      <h1>Full financial statement analysis, not just an opinion.</h1>
+      <p class="lede">
+        Every report here runs the same way: business overview, revenue and margin analysis,
+        balance sheet health, cash flow quality, valuation, and a named risk — built like a
+        proper FSA, written like it's for a person, not a committee.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="product">Product</button>
+        <button class="filter-tab" data-filter="services">Services</button>
+        <button class="filter-tab" data-filter="ai">AI</button>
+        <button class="filter-tab" data-filter="silicon">Silicon</button>
+      </div>
+
+      <div class="feed-count" id="feedCount">Showing 7 of 7 reports</div>
+
+      <div class="reports-grid full" id="reportsGrid">
+
+        <a class="report-card" href="sample-report.html" style="text-decoration:none;" data-sector="services">
+          <div class="tag-row"><span class="rating-chip hold">Hold</span><span class="tag">Services</span></div>
+          <h4>Persistent Systems: is the margin story catching up with the growth story?</h4>
+          <p>Full FSA breakdown — revenue quality, margin trend, balance sheet, valuation, and verdict.</p>
+          <div class="report-meta"><span>12 min · Full example</span><span>Read →</span></div>
+        </a>
+
+        <a class="report-card" href="reports.html" style="text-decoration:none;" data-sector="silicon">
+          <div class="tag-row"><span class="rating-chip buy">Buy</span><span class="tag">Silicon</span></div>
+          <h4>ASML: the one company no chipmaker can route around</h4>
+          <p>Why lithography equipment, not any single fab, may be the real chokepoint in the AI race.</p>
+          <div class="report-meta"><span>9 min · Draft</span><span>Soon</span></div>
+        </a>
+
+        <a class="report-card" href="reports.html" style="text-decoration:none;" data-sector="ai">
+          <div class="tag-row"><span class="rating-chip watch">Watch</span><span class="tag">AI</span></div>
+          <h4>Nvidia vs AMD: who wins the next AI capex cycle?</h4>
+          <p>Reading order backlogs and hyperscaler capex plans for signal, not noise.</p>
+          <div class="report-meta"><span>8 min · Draft</span><span>Soon</span></div>
+        </a>
+
+        <a class="report-card" href="reports.html" style="text-decoration:none;" data-sector="services">
+          <div class="tag-row"><span class="rating-chip hold">Hold</span><span class="tag">Services</span></div>
+          <h4>TCS vs Infosys: whose margin story actually holds up this quarter?</h4>
+          <p>A side-by-side read of deal wins, attrition, and pricing power — past the press release.</p>
+          <div class="report-meta"><span>7 min · Draft</span><span>Soon</span></div>
+        </a>
+
+        <a class="report-card" href="reports.html" style="text-decoration:none;" data-sector="product">
+          <div class="tag-row"><span class="rating-chip buy">Buy</span><span class="tag">Product</span></div>
+          <h4>Zoho vs the funded SaaS playbook: what bootstrapped growth actually costs</h4>
+          <p>A contrast case study on capital efficiency versus growth-at-all-costs.</p>
+          <div class="report-meta"><span>10 min · Draft</span><span>Soon</span></div>
+        </a>
+
+        <a class="report-card" href="reports.html" style="text-decoration:none;" data-sector="silicon">
+          <div class="tag-row"><span class="rating-chip watch">Watch</span><span class="tag">Silicon</span></div>
+          <h4>TSMC's utilization data as a leading indicator for the whole AI trade</h4>
+          <p>Why capacity utilization is a cleaner signal than any single customer's earnings call.</p>
+          <div class="report-meta"><span>11 min · Draft</span><span>Soon</span></div>
+        </a>
+
+        <a class="report-card" href="reports.html" style="text-decoration:none;" data-sector="ai">
+          <div class="tag-row"><span class="rating-chip hold">Hold</span><span class="tag">AI</span></div>
+          <h4>Microsoft's Copilot economics: what "attach rate" is actually hiding</h4>
+          <p>Working through the unit economics management hasn't fully disclosed yet.</p>
+          <div class="report-meta"><span>9 min · Draft</span><span>Soon</span></div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="archive-card" style="max-width:720px;">
+        <h4>Want the FSA framework itself?</h4>
+        <p>Every report is built on the same financial-statement-analysis checklist: revenue quality, margin trend, balance sheet strength, cash conversion, and valuation versus growth. See it applied in full in the sample report below.</p>
+        <a class="link" href="sample-report.html">Read the full sample report →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">Abdus Sameer — IT &amp; Semiconductor Research</div>
+      <div class="footer-links">
+        <a href="index.html#coverage">Coverage</a>
+        <a href="news.html">News Alerts</a>
+        <a href="index.html#methodology">Methodology</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <p class="disclaimer">
+      This site publishes independent research and commentary for educational purposes only.
+      It is not investment advice, and Abdus Sameer is not a SEBI-registered investment adviser
+      or research analyst unless stated otherwise. Views expressed are personal opinions based
+      on public information and may be wrong. Do your own research and consult a licensed
+      professional before making investment decisions. © 2026 Abdus Sameer.
+    </p>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+  const tabs = document.querySelectorAll('.filter-tab');
+  const items = document.querySelectorAll('#reportsGrid .report-card');
+  const count = document.getElementById('feedCount');
+  const total = items.length;
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const f = tab.dataset.filter;
+      let shown = 0;
+      items.forEach(item => {
+        const match = f === 'all' || item.dataset.sector === f;
+        item.style.display = match ? '' : 'none';
+        if (match) shown++;
+      });
+      count.textContent = f === 'all' ? `Showing ${total} of ${total} reports` : `Showing ${shown} of ${total} reports — ${f}`;
+    });
+  });
+</script>
+
+</body>
+</html>
