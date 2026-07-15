@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>News Alerts — Abdus Sameer</title>
+<title>Technology Intelligence — Abdus Sameer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
     </button>
     <nav class="links" id="navLinks">
       <a href="index.html#coverage">Coverage</a>
-      <a href="news.html">News Alerts</a>
+      <a href="news.html">Technology Intelligence</a>
       <a href="reports.html">Reports</a>
       <a href="index.html#methodology">Methodology</a>
       <a href="index.html#about">About</a>
@@ -32,184 +32,407 @@
 </header>
 
 <main>
-  <section class="page-hero dotgrid">
+
+  <!-- HERO -->
+  <section class="intel-hero dotgrid">
     <div class="wrap">
-      <div class="breadcrumb"><a href="index.html">Home</a> / News Alerts</div>
-      <span class="eyebrow">Live Coverage</span>
-      <h1>Every alert, cross-checked before it's posted.</h1>
-      <p class="lede">
-        No wire-copy reposts. Each item below is pulled from multiple public sources —
-        filings, transcripts, and reporting — filtered for what actually changes the thesis,
-        and written in one line you can act on.
-      </p>
+      <span class="eyebrow">Technology Intelligence</span>
+      <h1>Understanding what matters, not reading everything.</h1>
+      <p class="lede">Understanding the events shaping AI, semiconductors, enterprise software, and cloud — not just reporting them.</p>
+      <div class="trust-row">
+        <span class="trust-pill">Verified</span>
+        <span class="trust-pill">Cross-referenced</span>
+        <span class="trust-pill">Evidence-based</span>
+        <span class="trust-pill">Updated continuously</span>
+      </div>
     </div>
   </section>
 
+  <!-- SECTION 1: TODAY'S FIVE -->
+  <section>
+    <div class="wrap">
+      <div class="intel-section-head">
+        <span class="kicker">Today</span>
+        <h2>The five developments that actually matter</h2>
+        <p>Not a headline list — five things worth understanding, and why.</p>
+      </div>
+
+      <div class="dev-list">
+
+        <article class="dev-card">
+          <span class="dev-num">01 / SEMICONDUCTORS</span>
+          <div class="dev-top">
+            <h3>Nvidia's next-gen data-center chip shifts the competitive math for AMD</h3>
+            <span class="impact-tag positive">High impact</span>
+          </div>
+          <p class="dev-summary">
+            The new architecture isn't just a performance bump — it changes the cost-per-token
+            economics hyperscalers care about most. That reshuffles who wins the next round of
+            capacity commitments, not just who has the faster chip on paper.
+          </p>
+          <div class="dev-meta-row">
+            <div class="dev-meta-item">Confidence<div class="confidence-bar"><div class="confidence-fill" style="width:85%"></div></div></div>
+            <div class="dev-meta-item">Affected companies<div class="company-chips"><span class="company-chip">NVDA</span><span class="company-chip">AMD</span><span class="company-chip">TSMC</span><span class="company-chip">MSFT</span></div></div>
+          </div>
+          <a class="dev-link" href="sample-report.html">Read full analysis →</a>
+        </article>
+
+        <article class="dev-card">
+          <span class="dev-num">02 / IT SERVICES</span>
+          <div class="dev-top">
+            <h3>Infosys guidance raise signals AI-services deals are converting to revenue, not just pipeline</h3>
+            <span class="impact-tag mixed">Mixed impact</span>
+          </div>
+          <p class="dev-summary">
+            The revenue signal is genuinely good — deals that were "pipeline" a year ago are now
+            billable. But margin guidance held flat, which suggests these engagements are being
+            priced competitively to win share, not to protect profitability.
+          </p>
+          <div class="dev-meta-row">
+            <div class="dev-meta-item">Confidence<div class="confidence-bar"><div class="confidence-fill" style="width:75%"></div></div></div>
+            <div class="dev-meta-item">Affected companies<div class="company-chips"><span class="company-chip">INFY</span><span class="company-chip">TCS</span><span class="company-chip">WIPRO</span></div></div>
+          </div>
+          <a class="dev-link" href="reports.html">Read full analysis →</a>
+        </article>
+
+        <article class="dev-card">
+          <span class="dev-num">03 / SILICON EQUIPMENT</span>
+          <div class="dev-top">
+            <h3>ASML order softness looks cyclical, not structural — here's the distinction that matters</h3>
+            <span class="impact-tag negative">Negative, short-term</span>
+          </div>
+          <p class="dev-summary">
+            New system bookings slowed this quarter. The key question for anyone holding the
+            stock is whether that's demand pausing for a breath or actually shrinking — the
+            service and installed-base revenue trend suggests the former.
+          </p>
+          <div class="dev-meta-row">
+            <div class="dev-meta-item">Confidence<div class="confidence-bar"><div class="confidence-fill" style="width:65%"></div></div></div>
+            <div class="dev-meta-item">Affected companies<div class="company-chips"><span class="company-chip">ASML</span><span class="company-chip">TSMC</span><span class="company-chip">INTC</span></div></div>
+          </div>
+          <a class="dev-link" href="reports.html">Read full analysis →</a>
+        </article>
+
+        <article class="dev-card">
+          <span class="dev-num">04 / ENTERPRISE AI</span>
+          <div class="dev-top">
+            <h3>Microsoft's Copilot "attach rate" number is real, but the denominator is doing a lot of work</h3>
+            <span class="impact-tag mixed">Needs context</span>
+          </div>
+          <p class="dev-summary">
+            A large headline percentage sounds like fast adoption, until you check what counts as
+            "active usage" this quarter versus last. The comparison isn't quite apples-to-apples —
+            worth watching how this is defined next quarter.
+          </p>
+          <div class="dev-meta-row">
+            <div class="dev-meta-item">Confidence<div class="confidence-bar"><div class="confidence-fill" style="width:60%"></div></div></div>
+            <div class="dev-meta-item">Affected companies<div class="company-chips"><span class="company-chip">MSFT</span><span class="company-chip">ORCL</span></div></div>
+          </div>
+          <a class="dev-link" href="reports.html">Read full analysis →</a>
+        </article>
+
+        <article class="dev-card">
+          <span class="dev-num">05 / PRODUCT SAAS</span>
+          <div class="dev-top">
+            <h3>Zoho's bootstrapped growth is becoming a live counter-argument to the "raise more, grow faster" playbook</h3>
+            <span class="impact-tag positive">Structural</span>
+          </div>
+          <p class="dev-summary">
+            No funding round, no layoffs headline, consistent growth. As funded SaaS peers face
+            retention pressure, this is a useful real-world data point on capital efficiency
+            worth tracking over several quarters, not just one.
+          </p>
+          <div class="dev-meta-row">
+            <div class="dev-meta-item">Confidence<div class="confidence-bar"><div class="confidence-fill" style="width:70%"></div></div></div>
+            <div class="dev-meta-item">Affected companies<div class="company-chips"><span class="company-chip">ZOHO</span><span class="company-chip">FRSH</span></div></div>
+          </div>
+          <a class="dev-link" href="reports.html">Read full analysis →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: TIMELINE -->
+  <section style="background:var(--bg-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="intel-section-head">
+        <span class="kicker">Chronology</span>
+        <h2>Technology Timeline</h2>
+        <p>Every event that crossed the threshold today, in order, with the one-line reason it matters.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-time">09:12 IST<span class="cat">Silicon</span></div>
+          <div class="timeline-body">
+            <h5>Nvidia unveils next-gen data-center architecture</h5>
+            <p class="why">Why it matters: shifts cost-per-token economics, not just raw speed.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">11:40 IST<span class="cat">Services</span></div>
+          <div class="timeline-body">
+            <h5>Infosys raises FY guidance on AI-services conversion</h5>
+            <p class="why">Why it matters: pipeline is turning into billable revenue — but margin held flat.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">14:05 IST<span class="cat">Silicon</span></div>
+          <div class="timeline-body">
+            <h5>ASML reports softer order intake, steady service revenue</h5>
+            <p class="why">Why it matters: distinguishes a demand pause from a demand problem.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">16:30 IST<span class="cat">AI</span></div>
+          <div class="timeline-body">
+            <h5>Microsoft discloses Copilot usage metric with new definition</h5>
+            <p class="why">Why it matters: the definition change makes quarter-over-quarter comparison unreliable.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">18:50 IST<span class="cat">Product</span></div>
+          <div class="timeline-body">
+            <h5>Zoho reports continued growth without external funding</h5>
+            <p class="why">Why it matters: a live contrast case to the funded-growth SaaS model.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: SECTOR INTELLIGENCE -->
+  <section>
+    <div class="wrap">
+      <div class="intel-section-head">
+        <span class="kicker">By Sector</span>
+        <h2>Sector Intelligence</h2>
+        <p>Where each part of the stack stands right now.</p>
+      </div>
+      <div class="sector-grid">
+        <div class="sector-card">
+          <div class="sector-card-top"><h4>AI</h4><span class="trend bull">Bullish</span></div>
+          <p>Enterprise adoption is real but uneven — infra spend is outrunning proven ROI in most verticals.</p>
+          <div class="company-chips"><span class="company-chip">MSFT</span><span class="company-chip">PLTR</span><span class="company-chip">ORCL</span></div>
+          <a href="reports.html">Read sector intelligence →</a>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card-top"><h4>Semiconductors</h4><span class="trend bull">Bullish</span></div>
+          <p>Capacity utilization implies the AI capex cycle isn't slowing, despite pockets of order softness.</p>
+          <div class="company-chips"><span class="company-chip">NVDA</span><span class="company-chip">ASML</span><span class="company-chip">TSMC</span></div>
+          <a href="reports.html">Read sector intelligence →</a>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card-top"><h4>Cloud</h4><span class="trend bull">Bullish</span></div>
+          <p>Hyperscaler capex guidance keeps rising, with AI workloads now the primary driver of growth.</p>
+          <div class="company-chips"><span class="company-chip">MSFT</span><span class="company-chip">AMZN</span></div>
+          <a href="reports.html">Read sector intelligence →</a>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card-top"><h4>Cybersecurity</h4><span class="trend bull">Bullish</span></div>
+          <p>Budget resilience continues even as broader IT spend growth cools — a defensible sub-sector.</p>
+          <div class="company-chips"><span class="company-chip">PANW</span><span class="company-chip">CRWD</span></div>
+          <a href="reports.html">Read sector intelligence →</a>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card-top"><h4>Enterprise Software</h4><span class="trend bear">Cautious</span></div>
+          <p>Net revenue retention is softening industry-wide as buyers consolidate vendor spend.</p>
+          <div class="company-chips"><span class="company-chip">CRM</span><span class="company-chip">ZOHO</span></div>
+          <a href="reports.html">Read sector intelligence →</a>
+        </div>
+        <div class="sector-card">
+          <div class="sector-card-top"><h4>IT Services</h4><span class="trend bull">Improving</span></div>
+          <p>AI-services deal conversion is picking up, though margin discipline remains the open question.</p>
+          <div class="company-chips"><span class="company-chip">TCS</span><span class="company-chip">INFY</span><span class="company-chip">HCLTECH</span></div>
+          <a href="reports.html">Read sector intelligence →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: AI EXPLAINED -->
+  <section style="background:var(--bg-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="intel-section-head">
+        <span class="kicker">AI Explained</span>
+        <h2>One story, fully unpacked</h2>
+        <p>Every major development gets this treatment — not just a summary, a full breakdown.</p>
+      </div>
+      <div class="explain-card">
+        <span class="dev-num">EXAMPLE — NVIDIA'S NEXT-GEN DATA-CENTER CHIP</span>
+        <h3>Why the new architecture matters more than the benchmark numbers</h3>
+        <div class="explain-grid">
+          <div class="explain-block"><h5>What happened</h5><p>Nvidia unveiled its next-generation data-center architecture, claiming a meaningful jump in performance-per-watt over the prior generation.</p></div>
+          <div class="explain-block"><h5>Why it happened</h5><p>Hyperscaler customers have been pushing for lower inference cost-per-token as AI workloads shift from training to serving models at scale.</p></div>
+          <div class="explain-block"><h5>Financial impact</h5><p>Improves Nvidia's pricing power in the next order cycle; pressures AMD to compete on cost efficiency rather than raw throughput.</p></div>
+          <div class="explain-block"><h5>Technology impact</h5><p>Shifts the bottleneck conversation from compute alone toward packaging and memory bandwidth.</p></div>
+          <div class="explain-block"><h5>Who benefits</h5><p>Nvidia, TSMC (packaging demand), hyperscalers with early access to capacity.</p></div>
+          <div class="explain-block"><h5>Who loses</h5><p>AMD in the near term; smaller cloud providers priced out of the newest capacity.</p></div>
+          <div class="explain-block"><h5>Long-term implications</h5><p>Reinforces Nvidia's platform lock-in through software (CUDA) as much as hardware performance.</p></div>
+          <div class="explain-block"><h5>Key risks</h5><p>Supply constraints at TSMC could delay availability regardless of demand.</p></div>
+          <div class="explain-block full"><h5>Confidence &amp; evidence</h5><p><span class="confidence-bar" style="display:inline-block; width:120px; vertical-align:middle; margin-right:10px;"><span class="confidence-fill" style="display:block; width:80%;"></span></span>80% — based on company disclosures, analyst briefings, and prior-generation performance data. Illustrative example; sourcing shown for format only.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: TECHNOLOGY CONNECTIONS -->
+  <section>
+    <div class="wrap">
+      <div class="intel-section-head">
+        <span class="kicker">Ecosystem</span>
+        <h2>Technology Connections</h2>
+        <p>Click a company to see how it connects through the stack.</p>
+      </div>
+      <div class="connections-chain" id="chain">
+        <span class="chain-node" data-info="OpenAI's model demand drives Azure's AI infrastructure spend.">OpenAI</span><span class="chain-arrow">→</span>
+        <span class="chain-node" data-info="Azure's capacity build-out is one of Nvidia's largest single demand sources.">Microsoft Azure</span><span class="chain-arrow">→</span>
+        <span class="chain-node" data-info="Nvidia's GPU roadmap depends entirely on TSMC's leading-edge process capacity.">Nvidia</span><span class="chain-arrow">→</span>
+        <span class="chain-node" data-info="TSMC's fabs run almost entirely on ASML's extreme ultraviolet lithography systems.">TSMC</span><span class="chain-arrow">→</span>
+        <span class="chain-node" data-info="ASML's lithography systems can't be built without Applied Materials' deposition and etch tools.">ASML</span><span class="chain-arrow">→</span>
+        <span class="chain-node" data-info="Applied Materials sits at the base of the chain — its equipment enables everything upstream of it.">Applied Materials</span>
+      </div>
+      <div class="chain-detail" id="chainDetail">Click any company above to see how it connects to the rest of the stack.</div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: SIGNAL VS NOISE -->
   <section class="criteria-section">
     <div class="wrap">
-      <div class="section-head">
-        <span class="kicker">What Makes The Cut</span>
-        <h2>Not every headline — only what moves the thesis</h2>
-        <p>This isn't a news feed of everything a company does. Every alert has to pass a
-        materiality test: does it actually change the numbers, the risk, or the story an
-        investor should be tracking?</p>
+      <div class="intel-section-head">
+        <span class="kicker">Signal vs Noise</span>
+        <h2>What we ignore is as deliberate as what we cover</h2>
+        <p>This is the filter every story runs through before it appears anywhere on this page.</p>
       </div>
       <div class="criteria-grid">
-        <div class="criteria-col in">
-          <h4>✓ Makes the cut</h4>
-          <ul>
-            <li>Earnings beats/misses and guidance changes</li>
-            <li>Major deal wins, losses, or contract terminations</li>
-            <li>CEO/CFO or key leadership changes</li>
-            <li>Order backlog, capex, or utilization data shifts</li>
-            <li>Export controls, tariffs, and policy changes affecting the sector</li>
-            <li>M&amp;A activity — acquisitions, divestitures, stake sales</li>
-            <li>Wage hikes, attrition trends, or currency moves hitting margins</li>
-            <li>Visible share shifts between competitors</li>
-          </ul>
-        </div>
         <div class="criteria-col out">
-          <h4>✕ Filtered out</h4>
+          <h4>✕ Ignore</h4>
           <ul>
-            <li>Generic product-launch PR with no revenue/margin angle</li>
-            <li>Day-to-day price moves with no underlying cause</li>
-            <li>Award, recognition, or "vision statement" press releases</li>
-            <li>Rehashed wire copy with nothing new versus what's priced in</li>
-            <li>Sustainability/CSR announcements with no financial link</li>
-            <li>Speculation with no source behind it</li>
+            <li>Rumours with no named source</li>
+            <li>Clickbait headlines with no new information</li>
+            <li>Short-term price speculation</li>
+            <li>Social-media hype cycles</li>
+          </ul>
+        </div>
+        <div class="criteria-col in">
+          <h4>✓ Focus</h4>
+          <ul>
+            <li>Earnings, guidance, and margin commentary</li>
+            <li>Product launches with real revenue implications</li>
+            <li>Patents signalling strategic direction</li>
+            <li>Customer wins, losses, and contract changes</li>
+            <li>Acquisitions and divestitures</li>
+            <li>Government regulation and export policy</li>
+            <li>Supply chain shifts</li>
+            <li>Genuine technology breakthroughs</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section style="padding-top:0;">
+  <!-- SECTION 7: WHAT CHANGED SINCE YESTERDAY -->
+  <section style="background:var(--bg-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
     <div class="wrap">
-      <div class="filter-bar" id="filterBar">
-        <button class="filter-tab active" data-filter="all">All</button>
-        <button class="filter-tab" data-filter="product">Product</button>
-        <button class="filter-tab" data-filter="services">Services</button>
-        <button class="filter-tab" data-filter="ai">AI</button>
-        <button class="filter-tab" data-filter="silicon">Silicon</button>
+      <div class="intel-section-head">
+        <span class="kicker">Since Yesterday</span>
+        <h2>What changed</h2>
+        <p>Simple. Fast. Useful.</p>
       </div>
-
-      <div class="feed-count" id="feedCount">Showing 10 of 10 alerts</div>
-
-      <div class="feed-list full" id="feedList">
-
-        <div class="alert-item" data-sector="silicon">
-          <div class="alert-meta"><span class="time">2h ago</span><span class="sector-chip silicon">Silicon</span></div>
-          <div class="alert-body">
-            <h5>Nvidia's data-center backlog grew again — but so did customer concentration</h5>
-            <p>Order book strength is real, but a shrinking number of hyperscalers now account for most of it. Worth watching next quarter.</p>
-            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 5 sources</span><a href="sample-report.html">Read full analysis →</a></div>
-          </div>
-        </div>
-
-        <div class="alert-item" data-sector="services">
-          <div class="alert-meta"><span class="time">6h ago</span><span class="sector-chip services">Services</span></div>
-          <div class="alert-body">
-            <h5>Infosys raises full-year guidance on the back of AI-services deal wins</h5>
-            <p>The raise is real, but margin guidance stayed flat — deal wins may be coming at a cost.</p>
-            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 4 sources</span><a href="reports.html">Read full analysis →</a></div>
-          </div>
-        </div>
-
-        <div class="alert-item" data-sector="ai">
-          <div class="alert-meta"><span class="time">1d ago</span><span class="sector-chip ai">AI</span></div>
-          <div class="alert-body">
-            <h5>Microsoft's Copilot attach-rate disclosure raises more questions than it answers</h5>
-            <p>The number sounds strong until you check what "active usage" is actually defined as this quarter.</p>
-            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 3 sources</span><a href="reports.html">Read full analysis →</a></div>
-          </div>
-        </div>
-
-        <div class="alert-item" data-sector="product">
-          <div class="alert-meta"><span class="time">2d ago</span><span class="sector-chip product">Product</span></div>
-          <div class="alert-body">
-            <h5>Zoho's continued bootstrapped growth is quietly outpacing funded SaaS peers</h5>
-            <p>No funding round, no layoffs headline — a useful contrast case for the "growth needs capital" narrative.</p>
-            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 3 sources</span><a href="reports.html">Read full analysis →</a></div>
-          </div>
-        </div>
-
-        <div class="alert-item" data-sector="silicon">
-          <div class="alert-meta"><span class="time">2d ago</span><span class="sector-chip silicon">Silicon</span></div>
-          <div class="alert-body">
-            <h5>ASML order intake softens — but service revenue keeps compounding</h5>
-            <p>New system bookings slowed, but the installed-base annuity business is now big enough to cushion the cycle.</p>
-            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 4 sources</span><a href="reports.html">Read full analysis →</a></div>
-          </div>
-        </div>
-
-        <div class="alert-item" data-sector="services">
-          <div class="alert-meta"><span class="time">3d ago</span><span class="sector-chip services">Services</span></div>
-          <div class="alert-body">
-            <h5>TCS attrition ticks up for the second straight quarter</h5>
-            <p>Still below industry average, but the direction matters more than the level right now.</p>
-            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 3 sources</span><a href="reports.html">Read full analysis →</a></div>
-          </div>
-        </div>
-
-        <div class="alert-item" data-sector="ai">
-          <div class="alert-meta"><span class="time">4d ago</span><span class="sector-chip ai">AI</span></div>
-          <div class="alert-body">
-            <h5>AMD's MI-series guidance gets a quiet upgrade from two hyperscaler contracts</h5>
-            <p>Neither contract was announced formally — both surfaced through capex disclosures instead.</p>
-            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 4 sources</span><a href="reports.html">Read full analysis →</a></div>
-          </div>
-        </div>
-
-        <div class="alert-item" data-sector="product">
-          <div class="alert-meta"><span class="time">5d ago</span><span class="sector-chip product">Product</span></div>
-          <div class="alert-body">
-            <h5>Freshworks' net revenue retention stabilizes after three quarters of decline</h5>
-            <p>Small sample, but the first sign that pricing changes earlier this year may be working.</p>
-            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 3 sources</span><a href="reports.html">Read full analysis →</a></div>
-          </div>
-        </div>
-
-        <div class="alert-item" data-sector="silicon">
-          <div class="alert-meta"><span class="time">6d ago</span><span class="sector-chip silicon">Silicon</span></div>
-          <div class="alert-body">
-            <h5>TSMC's capacity utilization implies the AI capex cycle isn't slowing yet</h5>
-            <p>Utilization data is a cleaner read than any single customer's earnings call.</p>
-            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 5 sources</span><a href="reports.html">Read full analysis →</a></div>
-          </div>
-        </div>
-
-        <div class="alert-item" data-sector="services">
-          <div class="alert-meta"><span class="time">1w ago</span><span class="sector-chip services">Services</span></div>
-          <div class="alert-body">
-            <h5>HCLTech's product-and-platform revenue mix quietly crosses 20% of total sales</h5>
-            <p>A structural shift worth tracking, since it carries a different margin profile than pure services.</p>
-            <div class="alert-foot"><span class="sources-note">⟡ Synthesized from 3 sources</span><a href="reports.html">Read full analysis →</a></div>
-          </div>
-        </div>
-
+      <div class="changed-list">
+        <div class="changed-item"><span class="dot"></span><span><b>Nvidia</b> — revenue estimate revised higher by sell-side consensus.</span></div>
+        <div class="changed-item"><span class="dot"></span><span><b>Microsoft</b> — announced another enterprise AI customer.</span></div>
+        <div class="changed-item"><span class="dot"></span><span><b>TSMC</b> — increased capacity guidance for advanced nodes.</span></div>
+        <div class="changed-item"><span class="dot"></span><span><b>Broadcom</b> — won new networking contracts tied to AI data centers.</span></div>
+        <div class="changed-item"><span class="dot"></span><span><b>Infosys</b> — full-year revenue guidance raised, margin guidance unchanged.</span></div>
       </div>
     </div>
   </section>
 
-  <section id="alerts" style="padding-top:0;">
+  <!-- SECTION 8: DEEP INTELLIGENCE -->
+  <section>
     <div class="wrap">
-      <div class="alerts">
-        <div>
-          <h3>Never miss an alert</h3>
-          <p>One email when something actually moves in IT, AI, or semiconductors. Nothing else.</p>
-        </div>
-        <form class="alerts-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Added ✓';">
-          <input type="email" placeholder="you@email.com" required>
-          <button type="submit">Notify me</button>
-        </form>
+      <div class="intel-section-head">
+        <span class="kicker">Long-form</span>
+        <h2>Deep Intelligence</h2>
+        <p>The bigger, slower-moving questions behind the daily developments.</p>
+      </div>
+      <div class="deep-list">
+        <a class="deep-item" href="reports.html">
+          <div><h5>Why inference may become larger than training</h5><p>The economics of serving AI models at scale versus building them in the first place.</p></div>
+          <span class="meta">14 min</span>
+        </a>
+        <a class="deep-item" href="reports.html">
+          <div><h5>How enterprise AI adoption is actually changing</h5><p>Past the pilot-program headlines, into what's really shipping into production.</p></div>
+          <span class="meta">11 min</span>
+        </a>
+        <a class="deep-item" href="reports.html">
+          <div><h5>The next semiconductor bottleneck won't be compute</h5><p>Why packaging and memory bandwidth are quietly becoming the real constraint.</p></div>
+          <span class="meta">13 min</span>
+        </a>
+        <a class="deep-item" href="reports.html">
+          <div><h5>Reading cloud spending trends without the buzzwords</h5><p>What hyperscaler capex guidance actually tells you about demand.</p></div>
+          <span class="meta">10 min</span>
+        </a>
       </div>
     </div>
   </section>
+
+  <!-- SECTION 9: ASK AI -->
+  <section style="background:var(--bg-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="intel-section-head">
+        <span class="kicker">Ask</span>
+        <h2>Ask AI</h2>
+        <p>A preview of the interface — connect a research backend to make it live.</p>
+      </div>
+      <div class="ask-box">
+        <div class="ask-input-row">
+          <input type="text" id="askInput" placeholder="Explain today's biggest news…">
+          <button id="askBtn">Ask</button>
+        </div>
+        <div class="ask-suggestions">
+          <button class="ask-chip" data-q="Why is Nvidia moving today?">Why is Nvidia moving today?</button>
+          <button class="ask-chip" data-q="Compare AMD vs Nvidia after today's announcement">Compare AMD vs Nvidia</button>
+          <button class="ask-chip" data-q="Explain like I'm 15">Explain like I'm 15</button>
+          <button class="ask-chip" data-q="Summarize today's earnings">Summarize today's earnings</button>
+        </div>
+        <div class="ask-response" id="askResponse">
+          <span class="demo-tag">Demo response — connect an AI backend for live answers</span>
+          <span id="askResponseText"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10: METHODOLOGY -->
+  <section>
+    <div class="wrap">
+      <div class="intel-section-head">
+        <span class="kicker">Methodology</span>
+        <h2>How this page is built</h2>
+        <p>Facts and interpretation are always kept separate — and every claim carries a confidence level.</p>
+      </div>
+      <div class="method-grid">
+        <div class="method-pillar"><div class="icon">1</div><h5>Cross-referenced</h5><p>Every item checked against multiple independent sources.</p></div>
+        <div class="method-pillar"><div class="icon">2</div><h5>Fact-checked</h5><p>Claims verified against filings, transcripts, and primary sources.</p></div>
+        <div class="method-pillar"><div class="icon">3</div><h5>AI-assisted</h5><p>AI compresses volume; it doesn't originate the judgment calls.</p></div>
+        <div class="method-pillar"><div class="icon">4</div><h5>Human-reviewed</h5><p>Nothing publishes without a human pass before it goes live.</p></div>
+      </div>
+      <div class="confidence-legend">
+        <span><b>80–100%</b> — strong, multi-source evidence</span>
+        <span><b>50–79%</b> — reasonable, single-source or early evidence</span>
+        <span><b>Below 50%</b> — flagged as speculative, rarely published</span>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer>
   <div class="wrap">
-    <div class="footer-grid">
+    <p class="intel-footer-line">Technology Intelligence is not about publishing more news. It is about helping readers understand what matters.</p>
+    <div class="footer-grid" style="margin-top:36px;">
       <div class="footer-brand">Abdus Sameer — IT &amp; Semiconductor Research</div>
       <div class="footer-links">
         <a href="index.html#coverage">Coverage</a>
@@ -234,25 +457,43 @@
   toggle.addEventListener('click', () => links.classList.toggle('open'));
   links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
 
-  const tabs = document.querySelectorAll('.filter-tab');
-  const items = document.querySelectorAll('#feedList .alert-item');
-  const count = document.getElementById('feedCount');
-  const total = items.length;
-
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-      const f = tab.dataset.filter;
-      let shown = 0;
-      items.forEach(item => {
-        const match = f === 'all' || item.dataset.sector === f;
-        item.style.display = match ? '' : 'none';
-        if (match) shown++;
-      });
-      count.textContent = f === 'all' ? `Showing ${total} of ${total} alerts` : `Showing ${shown} of ${total} alerts — ${f}`;
+  // Technology Connections — click to reveal
+  const nodes = document.querySelectorAll('.chain-node');
+  const detail = document.getElementById('chainDetail');
+  nodes.forEach(node => {
+    node.addEventListener('click', () => {
+      nodes.forEach(n => n.classList.remove('active'));
+      node.classList.add('active');
+      detail.textContent = node.dataset.info;
     });
   });
+
+  // Ask AI — demo responses only
+  const demoAnswers = {
+    "Why is Nvidia moving today?": "Nvidia's move today traces to its next-gen data-center architecture announcement, which improves performance-per-watt and cost-per-token — the two metrics hyperscalers weight most heavily in capacity decisions. This is a demo response; connect a live backend for real-time answers.",
+    "Compare AMD vs Nvidia after today's announcement": "Nvidia's new architecture widens its efficiency lead in inference workloads, pressuring AMD to compete primarily on price rather than raw performance in the next contract cycle. This is a demo response; connect a live backend for real-time answers.",
+    "Explain like I'm 15": "Think of it like a new, more fuel-efficient engine — it does the same job for less power, which is what matters most to companies running these chips 24/7. This is a demo response; connect a live backend for real-time answers.",
+    "Summarize today's earnings": "Infosys raised revenue guidance on stronger AI-services deal conversion, but kept margin guidance flat — meaning growth may be coming at the cost of pricing discipline. This is a demo response; connect a live backend for real-time answers."
+  };
+
+  const askResponse = document.getElementById('askResponse');
+  const askResponseText = document.getElementById('askResponseText');
+  const askInput = document.getElementById('askInput');
+
+  function showAnswer(q){
+    const answer = demoAnswers[q] || "This is a preview interface. Connect an AI research backend to generate live, sourced answers to any question typed here.";
+    askResponseText.textContent = answer;
+    askResponse.classList.add('show');
+  }
+
+  document.querySelectorAll('.ask-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      askInput.value = chip.dataset.q;
+      showAnswer(chip.dataset.q);
+    });
+  });
+  document.getElementById('askBtn').addEventListener('click', () => showAnswer(askInput.value));
+  askInput.addEventListener('keydown', (e) => { if(e.key === 'Enter') showAnswer(askInput.value); });
 </script>
 
 </body>
